@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -6,6 +7,12 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      primary: 'var(--PRIMARY)',
+      secondary: 'var(--SECONDARY)',
+      white: 'var(--WHITE)',
+      news: 'var(--NEWS)',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -15,4 +22,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
