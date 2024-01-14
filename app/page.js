@@ -11,16 +11,16 @@ export default function Home() {
         <img src="navbar.svg" alt="navbar" className="navbar" />
         <div className="flex absolute top-36">
           <Container sx={{ margin: '0 6rem' }}>
-            <div className="flex flex-col gap-10 text-white mt-24">
+            <div className="flex flex-col gap-10 text-secondary mt-24">
               <h2 className="text-4xl font-semibold">Selamat Datang di</h2>
               <h1 className="text-6xl font-extrabold">SMA Angkasa 1 Jakarta</h1>
-              <p className="text-2xl font-bold">sekolah KOMPAK</p>
+              <p className="text-2xl font-bold">Sekolah KOMPAK</p>
             </div>
             <div className="flex gap-5 pt-16">
               <button className="text-secondary font-bold bg-primary w-52 h-14 text-2xl rounded-2xl">
                 Tentang Kami
               </button>
-              <button className="w-52 h-14 text-2xl rounded-2xl border bg-opacity-0 border-white text-white">
+              <button className="w-52 h-14 text-2xl rounded-2xl border bg-opacity-0 border-white text-secondary">
                 Pendaftaran
               </button>
             </div>
@@ -63,7 +63,7 @@ export default function Home() {
               berlokasi di Jalan Trikora Raya Halim Perdanakusuma Jakarta Timur.
             </p>
             <div>
-              <button className="w-40 h-12 bg-primary text-white rounded font-bold tracking-wider">
+              <button className="w-40 h-12 bg-primary text-white rounded font-bold tracking-wider text-xl">
                 Lebih Lanjut
               </button>
             </div>
@@ -76,7 +76,7 @@ export default function Home() {
         <div className="flex justify-center items-center flex-col p-10 gap-10">
           <h2 className="text-4xl text-white font-extrabold">Galeri</h2>
           <img src="galeri.svg" alt="galeri" />
-          <button className="w-56 h-12 bg-secondary text-primary font-bold">
+          <button className="w-56 h-12 bg-secondary text-primary font-bold text-2xl">
             Lebih Lanjut
           </button>
         </div>
@@ -102,7 +102,7 @@ export default function Home() {
                 merupakan pengembangan dan jabaran visi dan misi SMA Angkasa 1
                 sehingga menjadikan sebuah kurikulum multidimensi.
               </p>
-              <button className="w-40 h-12 bg-primary text-white font-bold tracking-wide rounded">
+              <button className="w-40 h-12 bg-primary text-white font-bold tracking-wide rounded text-xl">
                 Lebih Lanjut
               </button>
             </div>
@@ -120,15 +120,20 @@ export default function Home() {
             Berita dan Kegiatan
           </h2>
           <img src="berita-kegiatan.svg" alt="berita" />
-          <button className="bg-primary text-white w-56 h-12 text-2xl tracking-wide">
+          <button className="bg-primary text-white font-bold w-56 h-12 text-2xl tracking-wide">
             Lebih Lanjut
           </button>
         </div>
       </section>
 
       {/* footer */}
-      <footer className="bg-primary">
-        <div className="flex justify-around items-center py-10 text-white">
+      <footer className="bg-primary relative">
+        <img
+          src="footer/footer-bg.svg"
+          alt="footer"
+          className="absolute top-0  right-6"
+        />
+        <div className="flex justify-around items-center py-14 text-white relative">
           <div>
             <img src="logo-sekolah.svg" alt="logo-footer" />
           </div>
